@@ -1,0 +1,10 @@
+ion-content {
+    --background: none; // Remove o fundo padrão do ion-content, se necessário
+    position: relative; // Necessário para posicionamento absoluto dos elementos internos
+  }
+  
+  .gradient-page {
+    height: 100vh; // Garante que a altura ocupe a tela inteira
+    background: linear-gradient(to bottom, #2EBFAC, #ffffff); // Gradiente de #2EBFAC para branco
+  }
+  

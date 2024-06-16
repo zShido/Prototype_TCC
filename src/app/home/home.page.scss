@@ -1,27 +1,35 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.container {
+  display: flex;
+  flex-direction: column; // Organiza os elementos em uma coluna
+  justify-content: center; // Centraliza verticalmente
+  align-items: center; // Centraliza horizontalmente
+  height: 100%; // Ocupa toda a altura disponível dentro do componente
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.centered-title {
+  color: black; // Ajuste a cor do texto se necessário
+  font-size: 2rem; // Ajuste o tamanho da fonte conforme necessário
+  margin-top: 12.5rem;
+  margin-bottom: 4rem; // Espaçamento abaixo do título
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.centered-text {
+  color: black; // Ajuste a cor do texto se necessário
+  font-size: 1.1rem;
+  margin-bottom: 2rem; // Espaçamento abaixo do texto
 }
 
-#container a {
-  text-decoration: none;
+.centered-button {
+  --background: #2EBFAC;
+  border-radius: 20px;
+  color: white;
+  margin-top: 1.5rem; // Espaçamento acima do botão
+}
+
+.custom-img{
+  position: absolute; // Permite posicionar a imagem independentemente
+  top: 0; // Posiciona a imagem no topo do contêiner
+  width: 100px; // Defina a largura desejada da imagem
+  height: auto; // Mantém a proporção original da imagem
+  margin-top: 150px; // Ajusta a posição vertical da imagem conforme necessário
 }

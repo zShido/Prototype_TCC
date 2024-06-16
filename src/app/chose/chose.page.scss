@@ -1,10 +1,68 @@
 ion-content {
-    --background: none; // Remove o fundo padrão do ion-content, se necessário
-    position: relative; // Necessário para posicionamento absoluto dos elementos internos
-  }
-  
-  .gradient-page {
-    height: 100vh; // Garante que a altura ocupe a tela inteira
-    background: linear-gradient(to bottom, #2EBFAC, #ffffff); // Gradiente de #2EBFAC para branco
-  }
-  
+  --background: none; // Remove o fundo padrão do ion-content, se necessário
+  position: relative; // Necessário para posicionamento absoluto dos elementos internos
+}
+
+.gradient-page {
+  height: 100vh; // Garante que a altura ocupe a tela inteira
+  background: linear-gradient(to bottom, #2EBFAC, #ffffff); // Gradiente de #2EBFAC para branco
+  display: flex;
+  flex-direction: column; // Organiza os elementos em uma coluna
+  align-items: center; // Centraliza horizontalmente
+}
+
+.fab-button {
+  --background: #054b41;
+  --background-activated: #054b41;
+  --color: white;
+}
+
+.centered-text1 {
+  color: #054b41;
+  font-size: 2rem;
+  text-align: center; // Centraliza o texto horizontalmente
+  margin-top: 15vh;
+}
+
+.centered-text2 {
+  color: #054b41;
+  font-size: 1.5rem;
+  text-align: center; // Centraliza o texto horizontalmente
+  margin-top: 5vh;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center; // Centraliza horizontalmente
+  gap: 1rem; // Espaço entre as imagens
+  margin-top: 2rem; // Espaço acima das imagens
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column; // Organiza imagem e botão em uma coluna
+  align-items: center; // Centraliza horizontalmente
+}
+
+.image-item {
+  width: 170px; // Ajuste a largura da imagem conforme necessário
+  height: 250px; // Define uma altura fixa para garantir que ambas as imagens tenham a mesma altura
+  object-fit: cover; // Cobre o contêiner mantendo a proporção
+  border-radius: 10px; // Bordas arredondadas, se desejar
+}
+
+.centered-buttonP {
+  --background: #000000;
+  --background-activated: #000000;
+  border-radius: 20px;
+  color: white;
+  margin-top: 1rem; // Espaçamento acima do botão
+}
+
+.centered-buttonS {
+  --background: #A4C639;
+  --background-activated: #A4C639;
+  border-radius: 20px;
+  color: white;
+  margin-top: 1rem; // Espaçamento acima do botão
+}

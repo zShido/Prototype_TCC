@@ -1,26 +1,24 @@
-<ion-content>
-  <div class="gradient-page">
-    <ion-fab slot="fixed" vertical="top" horizontal="start">
-      <ion-fab-button class="fab-button" (click)="accessHome()">
-        <ion-icon name="home"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
-    <ion-fab slot="fixed" vertical="top" horizontal="end">
-      <ion-fab-button class="fab-button">
-        <ion-icon name="menu"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
-    <h1 class="centered-text1">Antes de Tudo</h1>
-    <h4 class="centered-text2">Com qual destes aparelhos celulares o seu se parece?</h4>
-    <div class="img-container">
-      <div class="image-wrapper">
-        <img src="assets/imgs/iphonetest.jpg" class="image-item">
-        <ion-button class="centered-buttonP" (click)="accessAndroid()">iPhone</ion-button>
-      </div>
-      <div class="image-wrapper">
-        <img src="assets/imgs/samsung3.jpg"class="image-item">
-        <ion-button class="centered-buttonS" (click)="accessAndroid()">Samsung</ion-button>
-      </div>
+<app-background>
+  <ion-fab slot="fixed" vertical="top" horizontal="start">
+    <ion-fab-button class="fab-button" (click)="accessHome()">
+      <ion-icon name="home"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-fab slot="fixed" vertical="top" horizontal="end">
+    <ion-fab-button class="fab-button">
+      <ion-icon name="menu"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <h1 class="centered-text1">Antes de Tudo</h1>
+  <h4 class="centered-text2">Com qual destes aparelhos celulares o seu se parece?</h4>
+  <div class="img-container">
+    <div class="image-wrapper">
+      <img src="assets/imgs/iphonetest.jpg" class="image-item">
+      <ion-button class="centered-buttonP" (click)="accessAndroid()">iPhone</ion-button>
+    </div>
+    <div class="image-wrapper">
+      <img src="assets/imgs/samsung3.jpg" class="image-item">
+      <ion-button class="centered-buttonS" (click)="accessAndroid()">Samsung</ion-button>
     </div>
   </div>
-</ion-content>
+</app-background>

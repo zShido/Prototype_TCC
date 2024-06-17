@@ -15,10 +15,11 @@ const routes: Routes = [
     path: 'chose',
     loadChildren: () => import('./chose/chose.module').then( m => m.ChosePageModule)
   },  {
-    path: 'menu',
-    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
+    path: 'menu-android',
+    loadChildren: () => import('./menu-android/menu-android.module').then( m => m.MenuAndroidPageModule)
   },
 
+  
 ];
 
 @NgModule({

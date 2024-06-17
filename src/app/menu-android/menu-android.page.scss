@@ -1,0 +1,81 @@
+ion-content {
+    --background: none; // Remove o fundo padrão do ion-content, se necessário
+    position: relative; // Necessário para posicionamento absoluto dos elementos internos
+  }
+  
+  .fab-button {
+    --background: #054b41;
+    --background-activated: #054b41;
+    --color: white;
+    margin-top: 2vh;
+  }
+  
+  .centered-text1 {
+    color: #054b41;
+    font-size: 2rem;
+    text-align: center; // Centraliza o texto horizontalmente
+    margin-top: 12.5vh;
+  }
+  
+  .centered-text2 {
+    color: #054b41;
+    font-size: 1.5rem;
+    text-align: center; // Centraliza o texto horizontalmente
+    margin-top: 3vh;
+  }
+  
+  .options-container {
+    display: flex;
+    flex-direction: column; // Organiza os cards em uma coluna
+    gap: 1rem; // Espaçamento entre os cards
+    padding: 2rem; // Espaçamento interno
+  }
+  
+  .option-card {
+    display: flex;
+    flex-direction: column; // Organiza o ícone, o título e o texto em uma coluna
+    align-items: center; // Centraliza horizontalmente
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.5rem; // Espaçamento interno do card
+    text-align: center; // Centraliza o texto horizontalmente
+  
+    .icon-title {
+      display: flex;
+      align-items: center; // Alinha o ícone e o título verticalmente
+      gap: 0.5rem; // Espaçamento entre o ícone e o título
+      margin-bottom: 0.1rem; // Espaçamento abaixo do contêiner icon-title
+      margin-top: 0.1rem;
+    }
+  
+    p {
+      text-align: center;
+      color: white; // Adiciona cor branca ao texto
+      font-size: 1.2rem;
+    }
+  
+    ion-icon {
+      font-size: 3rem;
+      color: white; // Adiciona cor branca aos ícones
+    }
+  
+    h3 {
+      font-size: 1.5rem;
+      margin: 0; // Remove margens do h3
+      color: white; // Adiciona cor branca ao título
+    }
+  
+    &.red {
+      background-color: #ff5252;
+      color: white;
+    }
+  
+    &.blue {
+      background-color: #448aff;
+    }
+  
+    &.purple {
+      background-color: #7c4dff;
+    }
+  }
+  

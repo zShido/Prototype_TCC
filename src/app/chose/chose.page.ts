@@ -19,7 +19,6 @@ export class ChosePage implements OnInit {
   }
 
   accessAndroid(){
-    this.navCtrl.navigateForward('/home');
-    //Mudar para a página do android
+    this.navCtrl.navigateForward('/menu-android');
   }
 }

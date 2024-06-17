@@ -7,6 +7,7 @@ ion-content {
   --background: #054b41;
   --background-activated: #054b41;
   --color: white;
+    margin-top: 2vh;
 }
 
 .centered-text1 {
@@ -27,7 +28,7 @@ ion-content {
   display: flex;
   justify-content: center; // Centraliza horizontalmente
   gap: 1rem; // Espaço entre as imagens
-  margin-top: 2rem; // Espaço acima das imagens
+  margin-top: 3.5rem; // Espaço acima das imagens
 }
 
 .image-wrapper {
@@ -38,9 +39,9 @@ ion-content {
 
 .image-item {
   width: 170px; // Ajuste a largura da imagem conforme necessário
-  height: 250px; // Define uma altura fixa para garantir que ambas as imagens tenham a mesma altura
+  height: 280px; // Define uma altura fixa para garantir que ambas as imagens tenham a mesma altura
   object-fit: cover; // Cobre o contêiner mantendo a proporção
-  border-radius: 10px; // Bordas arredondadas, se desejar
+  border-radius: 10px; // Bordas arredondadas
 }
 
 .centered-buttonP {

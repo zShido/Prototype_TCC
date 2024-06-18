@@ -1,24 +1,38 @@
 <app-background>
-  <ion-fab slot="fixed" vertical="top" horizontal="start">
-    <ion-fab-button  size="large"  class="fab-button" (click)="accessHome()">
-      <ion-icon name="home"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-  <ion-fab slot="fixed" vertical="top" horizontal="end">
-    <ion-fab-button class="fab-button">
-      <ion-icon name="help-outline"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-  <h1 class="centered-text1">Antes de Tudo</h1>
-  <h4 class="centered-text2">Com qual destes aparelhos celulares o seu se parece?</h4>
-  <div class="img-container">
-    <div class="image-wrapper">
-      <img src="assets/imgs/iphonetest.jpg" class="image-item">
-      <ion-button class="centered-buttonP" (click)="accessAndroid()">iPhone</ion-button>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button class="button" (click)="accessHome()">
+          <ion-icon slot="icon-only" name="home"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>Prototype</ion-title>
+      <ion-buttons slot="end">
+        <ion-button class="button" id="present-alert">
+          <ion-icon slot="icon-only" name="help-outline"></ion-icon>
+        </ion-button>
+        <ion-alert
+          trigger="present-alert"
+          header="Dificuldades?"
+          message="Repare na maçã na parte traseira do seu aparelho!"
+          [buttons]="alertButtons"
+        ></ion-alert>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <h1 class="centered-text1">Antes de Tudo</h1>
+    <h4 class="centered-text2">Com qual destes aparelhos celulares o seu se parece?</h4>
+    <div class="img-container">
+      <div class="image-wrapper">
+        <img src="assets/imgs/iphonetest.jpg" class="image-item">
+        <ion-button class="centered-buttonP" (click)="accessAndroid()">iPhone</ion-button>
+      </div>
+      <div class="image-wrapper">
+        <img src="assets/imgs/samsung3.jpg" class="image-item">
+        <ion-button class="centered-buttonS" (click)="accessAndroid()">Samsung</ion-button>
+      </div>
     </div>
-    <div class="image-wrapper">
-      <img src="assets/imgs/samsung3.jpg" class="image-item">
-      <ion-button class="centered-buttonS" (click)="accessAndroid()">Samsung</ion-button>
-    </div>
-  </div>
+  </ion-content>
 </app-background>

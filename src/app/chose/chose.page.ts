@@ -9,6 +9,8 @@ import { NavController } from '@ionic/angular';
 })
 export class ChosePage implements OnInit {
 
+  alertButtons = ['Ok!']
+
   constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
@@ -21,4 +23,5 @@ export class ChosePage implements OnInit {
   accessAndroid(){
     this.navCtrl.navigateForward('/menu-android');
   }
+
 }

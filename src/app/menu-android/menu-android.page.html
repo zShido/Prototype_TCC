@@ -1,25 +1,19 @@
 <app-background>
-  <ion-fab slot="fixed" vertical="top" horizontal="start">
-    <ion-fab-button class="fab-button" (click)="accessChose()">
+  <ion-header>
+    <ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-button class="button" (click)="accessChose()">
       <ion-icon name="arrow-undo-outline"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-  <ion-fab slot="fixed" vertical="top" horizontal="end">
-    <ion-fab-button class="fab-button">
+    </ion-button>
+  </ion-buttons>
+  <ion-title>Prototype</ion-title>
+  <ion-buttons slot="end">
+    <ion-button class="button">
       <ion-icon name="menu"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-list side="bottom">
-      <ion-fab-button class="fab-button">
-        <ion-icon name="flower-outline"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button class="fab-button">
-        <ion-icon name="calendar-outline"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button class="fab-button">
-        <ion-icon name="alarm-outline"></ion-icon>
-      </ion-fab-button>
-    </ion-fab-list>
-  </ion-fab>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+</ion-header>
   <h1 class="centered-text1">O que vamos aprender hoje?</h1>
   <h4 class="centered-text2">Toque na opção desejada!</h4>
   <div class="options-container">

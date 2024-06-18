@@ -2,19 +2,26 @@ ion-content {
     --background: none; // Remove o fundo padrão do ion-content, se necessário
     position: relative; // Necessário para posicionamento absoluto dos elementos internos
   }
+
+  ion-toolbar {
+    --background: #054b41;
+    --color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    }
   
-  .fab-button {
+  .button {
     --background: #054b41;
     --background-activated: #054b41;
     --color: white;
-    margin-top: 2vh;
   }
   
   .centered-text1 {
     color: #054b41;
     font-size: 2rem;
     text-align: center; // Centraliza o texto horizontalmente
-    margin-top: 12.5vh;
+    margin-top: 4vh;
   }
   
   .centered-text2 {

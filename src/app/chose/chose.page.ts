@@ -17,7 +17,7 @@ export class ChosePage implements OnInit {
   }
 
   accessHome(){
-    this.navCtrl.navigateForward('/home');
+    this.navCtrl.navigateBack('/home');
   }
 
   accessAndroid(){

@@ -17,21 +17,21 @@
   <h1 class="centered-text1">O que vamos aprender hoje?</h1>
   <h4 class="centered-text2">Toque na opção desejada!</h4>
   <div class="options-container">
-    <div class="option-card red">
+    <div class="option-card red" (click)="accessGaleria()">
       <div class="icon-title">
         <ion-icon name="flower-outline"></ion-icon>
         <h3>Galeria</h3>
       </div>
       <p>Registrou algum momento legal? Vamos aprender como organizar e gerenciar suas fotos!</p>
     </div>
-    <div class="option-card blue">
+    <div class="option-card blue" (click)="accessCalendario()">
       <div class="icon-title">
         <ion-icon name="calendar-outline"></ion-icon>
         <h3>Calendário</h3>
       </div>
       <p>Esquecendo de alguma data importante? Vamos aprender a se planejar!</p>
     </div>
-    <div class="option-card purple">
+    <div class="option-card purple" (click)="accessRelogio()">
       <div class="icon-title">
         <ion-icon name="alarm-outline"></ion-icon>
         <h3>Relógio</h3>

@@ -15,6 +15,18 @@ export class MenuAndroidPage implements OnInit {
   }
 
   accessChose(){
-    this.navCtrl.navigateForward('/chose');
+    this.navCtrl.navigateBack('/chose');
+  }
+
+  accessGaleria(){
+    this.navCtrl.navigateForward('/galeria')
+  }
+
+  accessCalendario(){
+    this.navCtrl.navigateForward('/calendario')
+  }
+
+  accessRelogio(){
+    this.navCtrl.navigateForward('/relogio')
   }
 }

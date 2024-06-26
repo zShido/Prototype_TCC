@@ -22,8 +22,9 @@ const routes: Routes = [
   
   {
     path: 'galeria',
-    loadChildren: () => import('./galeria/galeria.module').then( m => m.GaleriaPageModule)
-  },  {
+    loadChildren: () => import('./GMenu/galeria/galeria.module').then( m => m.GaleriaPageModule)
+  },
+  {
     path: 'calendario',
     loadChildren: () => import('./calendario/calendario.module').then( m => m.CalendarioPageModule)
   },
@@ -31,7 +32,10 @@ const routes: Routes = [
     path: 'relogio',
     loadChildren: () => import('./relogio/relogio.module').then( m => m.RelogioPageModule)
   },
-
+  {
+    path: 'gpage2',
+    loadChildren: () => import('./GMenu/gpage2/gpage2.module').then( m => m.Gpage2PageModule)
+  },
 
   
 ];

@@ -1,0 +1,100 @@
+<ion-content class="backgroundG">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button class="button" (click)="accessMenu()">
+          <ion-icon name="arrow-undo-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>Galeria</ion-title>
+      <ion-buttons slot="end">
+        <ion-button class="button">
+          <ion-icon name="menu"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <h1 class="centered-text">O que podemos fazer aqui?</h1>
+
+  <div class="button-group">
+    <ion-button class="menu-button white-button" id="present-alert">Imagens</ion-button>
+    <ion-button class="menu-button white-button" (click)="accessAlbuns()">Álbuns</ion-button>
+  </div>
+
+  <ion-alert
+  trigger="present-alert"
+  header="Página Atual"
+  message="Você já está nesta página, apenas role para baixo!"
+  [buttons]="alertButtons"
+></ion-alert>
+
+  <div class="menu-section">
+    <h2 class="menu-title">1 - Menus</h2>
+    <img src="/assets/galeria/1_Menu.jpg" alt="Menu Image" class="menu-image">
+
+    <p class="menu-description">
+      Na primeira tela após abrir a galeria você pode visualizar os seguintes menus: Imagens(1), Álbuns(2) e Histórias(3).
+    </p>
+
+  </div>
+
+  <div class="menu-section">
+    <h2 class="menu-title">2 - Imagens</h2>
+
+    <img src="/assets/galeria/2_Imagens.jpg" alt="Imagens" class="menu-image">
+
+    <p class="menu-description">
+      Ao acessar o menu de imagens, no centro da tela você poderá visualizar todas a fotos salvas no seu aparelho e suas datas correspondentes.
+    </p>
+
+  </div>
+
+  <div class="menu-section">
+    <h2 class="menu-title">2.1 - Selecionando Imagens</h2>
+    
+    <img src="/assets/galeria/2_1SelecImg.jpg" alt="Imagens" class="menu-image">
+
+    <p class="menu-description">
+      Ao manter pressionado o dedo na imagem desejada, você irá seleciona-la, podendo assim selecionar outras imagens (ou somente uma) para depois escolher
+      uma ação desejada, como: Compartilhar(1), Excluir(2) e Mais(3), marcados na imagem a seguir.
+    </p>
+
+  </div>
+
+  <div class="menu-section">
+    <h2 class="menu-title">2.2 - Compartilhando Imagens</h2>
+    
+    <img src="/assets/galeria/2_2_CompImg.jpg" alt="Imagens" class="menu-image">
+
+    <p class="menu-description">
+      Ao selecionar a(s) imagem(s) desejada(s) e precionar o botão de compartilhar, o celular mostrará a(s) imagem(s) selecionada(s), seus contatos recentes para enviar
+      a(s) imagem(s)(1) e os aplicativos para você compartilhar a(s) imagem(s)(2).<br>
+      Após selecionar o aplicativo que deseja encaminhar a(s) imagem(s), o celular irá abrir o aplicativo
+      correspondente.
+    </p>
+
+  </div>
+
+  <div class="menu-section">
+    <h2 class="menu-title">2.3 - Excluindo Imagens</h2>
+    <p class="menu-description">
+      Ao seleciar a(s) imagem(s) desejada(s) e precionar o botão de excluir, aparecerá a seguinte mensagem.
+    </p>
+    <img src="/assets/galeria/2_3_ExcluIMG.jpg" alt="Imagens" class="menu-image">
+    <p class="menu-description">Precionando a opção "Mover para a Lixeira", a(s) imagem(s) serão movidas para a lixeira, onde serão excluidas automaticamente após 30 dias.</p>
+  </div>
+
+  <!-- Aditar as imagens e colocar uma imagem por tópico -->
+  <div class="menu-section">
+    <h2 class="menu-title">2.4 - Mais Opções</h2>
+    <p class="menu-description">
+      Precionando a opção "Mais", aparecerá um menu com várias opções possíveis.</p>
+      <p class="menu-description">- Copiar p/ área de transf.(1): Copia a(s) imagem(s), possibilitando colar a(s) imagem(s) em outro lugar.<br></p>
+      <p class="menu-description">- Copiar para o álbum(2): Possibilita criar uma cópia da(s) imagem(s) em algum álbum já criado.<br></p>
+      <p class="menu-description">- Mover para o álbum(3): Move a(s) imagem(s) selecionada para um álbum já criado, sem criar cópias.<br></p>
+      <p class="menu-description">- Definir como papel de parede(4): Define a(s) imagem(s) seleciona da como plano de fudno do celular, podendo ser o plano da tela de bloqueio, tela inicial ou ambas.</p>
+    <img src="/assets/galeria/2_4_MaisIMG.jpg" alt="Imagens" class="menu-image">
+  </div>
+
+</ion-content>

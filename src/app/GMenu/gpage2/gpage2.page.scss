@@ -30,6 +30,12 @@ ion-content.backgroundG {
     font-size: 2.2rem;
   }
   
+  .content-wrapper {
+    width: 100%;
+    max-width: 800px; // Limita a largura máxima para garantir legibilidade
+    margin: 0 auto; // Centraliza o contêiner na tela
+  }
+  
   .menu-section {
     background: #fff;
     border-radius: 10px;
@@ -37,7 +43,6 @@ ion-content.backgroundG {
     margin: 1rem 0; // Espaçamento entre as seções
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Sombra para destacar a seção
     width: 100%; // Ocupa toda a largura disponível
-    max-width: 600px; // Limita a largura máxima para garantir legibilidade
   
     .menu-title {
       font-size: 1.5rem;
@@ -49,6 +54,7 @@ ion-content.backgroundG {
       font-size: 1.5rem;
       color: #333;
       margin-bottom: 1rem;
+      justify-content: center;
     }
   
     .menu-image {

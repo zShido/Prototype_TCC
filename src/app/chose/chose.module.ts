@@ -20,4 +20,5 @@ import { ChosePage } from './chose.page';
   ],
   declarations: [ChosePage]
 })
+
 export class ChosePageModule {}

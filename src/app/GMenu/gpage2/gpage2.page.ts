@@ -9,13 +9,15 @@ import { NavController } from '@ionic/angular';
 })
 export class Gpage2Page implements OnInit {
 
+  alertButtons = ['Entendi']
+
   constructor(private navCtrl : NavController) { }
 
   ngOnInit() {
   }
 
-  accessMenu(){
-    this.navCtrl.navigateBack('/menu-android')
+  accessImagens(){
+    this.navCtrl.navigateBack('/galeria')
   }
 
 }

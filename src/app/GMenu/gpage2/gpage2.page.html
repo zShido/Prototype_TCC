@@ -2,7 +2,7 @@
   <ion-header>
     <ion-toolbar>
       <ion-buttons slot="start">
-        <ion-button class="button" (click)="accessMenu()">
+        <ion-button class="button" (click)="accessImagens()">
           <ion-icon name="arrow-undo-outline"></ion-icon>
         </ion-button>
       </ion-buttons>
@@ -17,13 +17,25 @@
 
   <h1 class="centered-text">O que podemos fazer aqui?</h1>
 
+  <div class="button-group">
+    <ion-button class="menu-button white-button" (click)="accessImagens()">Imagens</ion-button>
+    <ion-button class="menu-button white-button"  id="present-alert" >Álbuns</ion-button>
+  </div>
+
+  <ion-alert
+  trigger="present-alert"
+  header="Página Atual"
+  message="Você já está nesta página, apenas role para baixo!"
+  [buttons]="alertButtons"
+></ion-alert>
+
   <div class="menu-section">
     <h2 class="menu-title">3 - Álbuns</h2>
+    <img src="/assets/galeria/3_AlbunsMenu.jpg" alt="Imagens" class="menu-image">
     <p class="menu-description">
       Ao acessar o menu de Álbuns(1), no centro da tela você poderá visualizar todos os álbuns criados no seu celular.<br>
       Álbuns foram criados para facilitar a organização de fotos e vídeos do seu celular.
     </p>
-    <img src="/assets/galeria/3_AlbunsMenu.jpg" alt="Imagens" class="menu-image">
   </div>
 
   <div class="menu-section">
@@ -64,14 +76,21 @@
 
   <div class="menu-section">
     <h2 class="menu-title">3.4 - Selecionando e Excluindo Álbuns</h2>
+    <img src="/assets/galeria/3_4ExcluiAlbum.jpg" alt="Imagens" class="menu-image">
     <p class="menu-description">
       Para selecionar um  álbum, basta manter o dedo precionado no álbum de sua escolha. Após ser selecionado, clique na opção "Excluir".<br> 
     </p>
-      <img src="/assets/galeria/3_4ExcluiAlbum.jpg" alt="Imagens" class="menu-image">
+
+    <img src="/assets/galeria/3_4_1LixeiraAlbum.jpg" alt="Imagens" class="menu-image">
     <p class="menu-description">
       Basta selecionar a opção "Mover para a Lixeira" e o álbum será excluído automaticamente após 30 dias.
     </p>
-    <img src="/assets/galeria/3_4_1LixeiraAlbum.jpg" alt="Imagens" class="menu-image">
+  </div>
+
+  <div class="bottom-button">
+    <ion-button class="next-button" (click)="accessImagens()">Página Anterior
+      <ion-icon slot="start" name="arrow-back-outline"></ion-icon>
+    </ion-button>
   </div>
   
 </ion-content>

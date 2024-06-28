@@ -1,58 +1,118 @@
 ion-content.backgroundC {
-  --background: none; // Remove o fundo padrão do ion-content, se necessário
+  --background: none;
   display: flex;
-  flex-direction: column; // Organiza o conteúdo em uma coluna
-  align-items: center; // Centraliza o conteúdo horizontalmente
+  flex-direction: column;
+  align-items: center;
   position: relative;
-  min-height: 100vh; // Garante que a altura ocupe a tela inteira
-  padding: 1rem; // Adiciona espaçamento interno para evitar que o conteúdo encoste nas bordas
-  background: linear-gradient(to bottom, #448aff, #ffffff); // Gradiente de #2EBFAC para branco
+  min-height: 100vh;
+  padding: 1rem;
+  background: linear-gradient(to bottom, #448aff, #ffffff);
 }
 
 ion-toolbar {
-  --background: #3f74ce;
+  --background: #448aff;
   --color: white;
   height: 60px;
   display: flex;
   align-items: center;
 }
 
+.sumary {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  justify-content: center;
+  font-weight: bold;
+}
+
 .button {
-  --background: #3f74ce;
-  --background-activated: #3f74ce;
+  --background: #448aff;
+  --background-activated: #448aff;
   --color: white;
 }
 
 h1.centered-text {
-  text-align: center; // Centraliza o texto horizontalmente
-  margin-top: 20px; // Adiciona uma margem superior
-  width: 100%; // Garante que o elemento ocupe 100% da largura disponível
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
   font-size: 2.2rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.menu-button {
+  --background: #ffffff;
+  --background-activated: #ecdfdf;
+  --color: #448aff;
+  font-size: 1.2rem;
+  padding: 0.75rem 1.2rem;
+  border: none;
+  box-shadow: none;
+}
+
+.white-button {
+  --background: #ffffff;
+  --color: #448aff;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .menu-section {
   background: #fff;
   border-radius: 10px;
   padding: 1rem;
-  margin: 1rem 0; // Espaçamento entre as seções
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Sombra para destacar a seção
-  width: 100%; // Ocupa toda a largura disponível
-  max-width: 600px; // Limita a largura máxima para garantir legibilidade
+  margin: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
 
   .menu-title {
     font-size: 1.5rem;
-    color: #ce4b4b;
+    color: #448aff;
+    margin-bottom: 0.5rem;
+  }
+
+  .menu-subtitle {
+    font-size: 1.3rem;
+    color: #448aff;
+    font-weight: bold;
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
   }
 
   .menu-description {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #333;
     margin-bottom: 1rem;
+    justify-content: center;
   }
 
   .menu-image {
     width: 100%;
     border-radius: 10px;
   }
+}
+
+.bottom-button {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.next-button {
+  --background: #448aff;
+  --color: white;
+  --border-radius: 50px;
+  padding: 0.75rem 1.2rem;
+  font-size: 1.2rem;
 }

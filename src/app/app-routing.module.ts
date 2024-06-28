@@ -26,7 +26,7 @@ const routes: Routes = [
   },
   {
     path: 'calendario',
-    loadChildren: () => import('./calendario/calendario.module').then( m => m.CalendarioPageModule)
+    loadChildren: () => import('./CMenu/calendario/calendario.module').then( m => m.CalendarioPageModule)
   },
   {
     path: 'relogio',
@@ -35,7 +35,11 @@ const routes: Routes = [
   {
     path: 'gpage2',
     loadChildren: () => import('./GMenu/gpage2/gpage2.module').then( m => m.Gpage2PageModule)
+  },  {
+    path: 'cpage2',
+    loadChildren: () => import('./CMenu/cpage2/cpage2.module').then( m => m.Cpage2PageModule)
   },
+
 
   
 ];

@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-calendario',
-  templateUrl: './calendario.page.html',
-  styleUrls: ['./calendario.page.scss'],
+  selector: 'app-cpage2',
+  templateUrl: './cpage2.page.html',
+  styleUrls: ['./cpage2.page.scss'],
 })
-export class CalendarioPage implements OnInit {
+export class Cpage2Page implements OnInit {
+
+  alertButtons = ['Entendido']
 
   constructor(private navCtrl : NavController) { }
 
@@ -15,6 +17,10 @@ export class CalendarioPage implements OnInit {
 
   accessMenu(){
     this.navCtrl.navigateBack('/menu-android')
+  }
+
+  accessCalendario(){
+    this.navCtrl.navigateBack('/calendario')
   }
 
 }

@@ -1,0 +1,162 @@
+<ion-content class="backgroundC">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button class="button" (click)="accessMenu()">
+          <ion-icon name="arrow-undo-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>Calendário</ion-title>
+      <ion-buttons slot="end">
+        <ion-button class="button">
+          <ion-icon name="menu"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <h1 class="centered-text">O que podemos fazer aqui?</h1>
+
+  <div class="button-group">
+    <ion-button class="menu-button white-button" id="present-alert">Calendário</ion-button>
+    <ion-button class="menu-button white-button" (click)="accessPage2()">Lembretes</ion-button>
+  </div>
+
+  <ion-alert
+  trigger="present-alert"
+  header="Página Atual"
+  message="Você já está nesta página, apenas role para baixo!"
+  [buttons]="alertButtons"
+></ion-alert>
+
+
+  <div class="menu-section">
+    <h2 class="menu-title">Sumário</h2>
+    <p class="menu-description">
+     Nesta página serão abordados os seguintes tópicos: <br></p>
+     <p class="sumary" >
+     1. Modelos de Calendários;<br>
+     2. Agenda;<br>
+     3. Barra de Pesquisa;<br>
+    </p>
+    </div>
+
+  <div class="menu-section">
+    <h2 class="menu-title">1 - Modelos de Calendários</h2>
+    
+
+    <p class="menu-description">
+      Ao acessar o menu lateral no canto superior esquerdo da tela(1), você poderá selecionar o formato de visualização do calendário que desejar, assim copmo as imagens abaixo.
+    </p>
+    <!-- <img src="/assets/galeria/2_1SelecImg.jpg" alt="Imagens" class="menu-image"> -->
+    <p class="menu-subtitle">
+      Separação por Ano
+    </p>
+    <!-- <img src="/assets/galeria/2_1SelecImg.jpg" alt="Imagens" class="menu-image"> -->
+    <p class="menu-subtitle">
+      Separação por Mês
+    </p>
+    <!-- <img src="/assets/galeria/2_1SelecImg.jpg" alt="Imagens" class="menu-image"> -->
+    <p class="menu-subtitle">
+      Separação por Semana
+    </p>
+    <!-- <img src="/assets/galeria/2_1SelecImg.jpg" alt="Imagens" class="menu-image"> -->
+    <p class="menu-subtitle">
+      Separação por Dia
+    </p>
+    <!-- <img src="/assets/galeria/2_1SelecImg.jpg" alt="Imagens" class="menu-image"> -->
+  </div>
+
+  <div class="menu-section">
+    <h2 class="menu-title">2 - Agenda</h2>
+    <p class="menu-description">
+      Ao abrir o menu lateral e selecionar o menu "Agenda", você poderá visualizar os eventos que estão por vir e que já foram, além dos lembretes criados
+    </p>
+    <!-- <img src="/assets/galeria/2_3_ExcluIMG.jpg" alt="Imagens" class="menu-image"> -->
+    <p class="menu-description">Precionando a opção "Mover para a Lixeira", a(s) imagem(s) serão movidas para a lixeira, onde serão excluidas automaticamente após 30 dias.</p>
+  </div>
+
+  <div class="menu-section">
+    <h2 class="menu-title">3 - Barra de Pesquisa</h2>
+    <p class="menu-description">
+      Para abrir a barra de pesquisa, procure no canto superior direito da tela o ícone de uma "Lupa", assim como o da imagem a seguir.
+    </p>
+    <!-- <img src="/assets/galeria/2_3_ExcluIMG.jpg" alt="Imagens" class="menu-image"> -->
+    <p class="menu-description">Após clicar na "Lupa", você poderá pesquisar várias coisas, como feriados e lembretes criado. Aqui está uma imagem de exemplo:</p>
+    <!-- <img src="/assets/galeria/2_3_ExcluIMG.jpg" alt="Imagens" class="menu-image"> -->
+  </div>
+
+  <div class="menu-section">
+    <h2 class="menu-title">1 - Criando Lembretes</h2>
+    <p class="menu-description">
+      Existem várias maneiras de se criar um lembrete, aqui iremos mostrar 3 caminhos.
+    </p>
+    <p class="menu-subtitle">
+      Botão "Mais"
+    </p>
+    <!-- <img src="/assets/galeria/2_3_ExcluIMG.jpg" alt="Imagens" class="menu-image"> -->
+    <p class="menu-description">
+      Clicando no botão "Mais" no canto inferior direito da tela.
+    </p>
+    <p class="menu-subtitle">
+      Barra Inferior
+    </p>
+    <!-- <img src="/assets/galeria/2_3_ExcluIMG.jpg" alt="Imagens" class="menu-image"> -->
+    <p class="menu-description">
+      Clicando no barra de lembretes no inferior da tela.
+    </p>
+    <p class="menu-subtitle">
+      Toque Duplo na Data
+    </p>
+    <p class="menu-description">
+      Clicando duas vezes na data desejada para criar o lembrete. Na imagem a seguir, estamos usando o dia 13 de Junho como exemplo<br>
+    </p>
+    <!-- <img src="/assets/galeria/2_3_ExcluIMG.jpg" alt="Imagens" class="menu-image"> -->
+    <p class="menu-subtitle">
+      Tela de Lembrete
+    </p>
+    <p class="menu-description">
+      Abrindo a tela de lembretes, você pode configurá-lo da maneira que desejar, adicionando um Título(1), escolhendo o período do lembrete(2), local(3) e a hora da notificação do evento(4).<br>
+    </p>
+    <!-- <img src="/assets/galeria/2_3_ExcluIMG.jpg" alt="Imagens" class="menu-image"> -->
+    <p class="menu-description">
+      Após editar o lembrete como desejar, basta clicar em "Salvar" e seu lembrete estará pronto.
+    </p>
+    <!-- <img src="/assets/galeria/2_3_ExcluIMG.jpg" alt="Imagens" class="menu-image"> -->
+  </div>
+
+  <div class="menu-section">
+    <h2 class="menu-title">2 - Excluindo Lembretes</h2>
+    <p class="menu-description">
+      Para apagar um lembrete, basta abrir o menu lateral e selecinar o menu "Lembretes".
+    </p>
+    <!-- <img src="/assets/galeria/2_3_ExcluIMG.jpg" alt="Imagens" class="menu-image"> -->
+    <p class="menu-description">
+      Após acessar o menu, procure o lembrete na sua respectiva data e mantenha o dedo pressionado nele. Em seguida, abrirá um menu lateral, onde basta selecionar a opção "Excluir".
+    </p>
+    <!-- <img src="/assets/galeria/2_3_ExcluIMG.jpg" alt="Imagens" class="menu-image"> -->
+    <!-- <img src="/assets/galeria/2_3_ExcluIMG.jpg" alt="Imagens" class="menu-image"> -->
+    <p class="menu-description">
+      Agora, clique em "Mover para lixeira" e seu lembrete será excluido do seu calendário
+    </p>
+  </div>
+
+  <div class="menu-section">
+    <h2 class="menu-title">3 - Editando Lembretes</h2>
+    <p class="menu-description">
+      Para editar um lembrete, basta abrir o menu lateral e selecinar o menu "Lembretes".
+    </p>
+    <!-- <img src="/assets/galeria/2_3_ExcluIMG.jpg" alt="Imagens" class="menu-image"> -->
+    <p class="menu-description">
+      Após acessar o menu, procure o lembrete na sua respectiva data e mantenha o dedo pressionado nele. Em seguida, abrirá um menu lateral, onde basta selecionar a opção "Editar".
+    </p>
+    <!-- <img src="/assets/galeria/2_3_ExcluIMG.jpg" alt="Imagens" class="menu-image"> -->
+  </div>
+
+  <div class="bottom-button">
+    <ion-button class="next-button" (click)="accessPage2()">Próxima Página
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+</ion-content>

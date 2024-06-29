@@ -8,7 +8,7 @@ import { NavController } from '@ionic/angular';
 })
 export class GaleriaPage implements OnInit {
 
-  alertButtons = ['Entendido']
+  pagegalert = ['Entendido']
 
   constructor(private navCtrl : NavController) { }
 

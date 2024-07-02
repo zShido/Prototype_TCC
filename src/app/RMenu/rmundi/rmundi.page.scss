@@ -1,0 +1,122 @@
+ion-content.backgroundC {
+  --background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  padding: 1rem;
+  background: linear-gradient(to bottom, #7c4dff, #ffffff);
+}
+
+ion-toolbar {
+  --background: #7c4dff;
+  --color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.sumary {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.button {
+  --background: #7c4dff;
+  --background-activated: #7c4dff;
+  --color: white;
+}
+
+h1.centered-text {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 2.2rem;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem; /* Ajuste o espaço entre os botões */
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.menu-button {
+  --background: #ffffff;
+  --background-activated: #ecdfdf;
+  --color: #7c4dff;
+  font-size: 1.2rem;
+  padding: 0.75rem 1.2rem;
+  border: none;
+  box-shadow: none;
+  flex: 1 1 40%; /* Ajuste a largura dos botões para caberem na tela */
+  max-width: 45%; /* Define um tamanho máximo para os botões */
+}
+
+.white-button {
+  --background: #ffffff;
+  --color: #7c4dff;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.menu-section {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+
+  .menu-title {
+    font-size: 1.5rem;
+    color: #7c4dff;
+    margin-bottom: 0.5rem;
+  }
+
+  .menu-subtitle {
+    font-size: 1.3rem;
+    color: #7c4dff;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .menu-description {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+
+  .menu-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.bottom-button {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.next-button {
+  --background: #7c4dff;
+  --color: white;
+  --border-radius: 50px;
+  padding: 0.75rem 1.2rem;
+  font-size: 1.2rem;
+}

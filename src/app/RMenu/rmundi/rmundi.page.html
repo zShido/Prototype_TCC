@@ -1,0 +1,87 @@
+<ion-content class="backgroundC">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button class="button" (click)="accessMenu()">
+          <ion-icon name="arrow-undo-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>Calendário</ion-title>
+      <ion-buttons slot="end">
+        <ion-button class="button">
+          <ion-icon name="menu"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <h1 class="centered-text">O que podemos fazer aqui?</h1>
+
+  <div class="button-group">
+  <ion-button class="menu-button white-button" (click)="accessAlarme()">Alarmes</ion-button>
+  <ion-button class="menu-button white-button"  id="present-alert">Relógio Mundial</ion-button>
+  <ion-button class="menu-button white-button" (click)="accessCronometro()">Crônometro</ion-button>
+  <ion-button class="menu-button white-button" (click)="accessTemporizador()">Temporizador</ion-button>
+</div>
+
+  <ion-alert
+  trigger="present-alert"
+  header="Página Atual"
+  message="Você já está nesta página, apenas role para baixo!"
+  [buttons]="alertButtons"
+></ion-alert>
+
+
+  <div class="menu-section">
+    <h2 class="menu-title">Sumário</h2>
+    <p class="menu-description">
+     Nesta página serão abordados os seguintes tópicos: <br></p>
+     <p class="sumary" >
+     1. Relógios Mundiais;<br>
+     2. Adicionando um Relógio<br>
+     3. Excluindo um Relógio;<br>
+    </p>
+    </div>
+
+  <div class="menu-section">
+    <h2 class="menu-title">1 - Relógios Mundiais;</h2>
+    <p class="menu-description">
+      Ao abrir o menu "Relógio Mundial"(1) do relógio, você poderá visualizar a tela inicial, podendo adicionar ou excluir hórarios de relógios mundiais.
+    </p>
+    <!-- <img src="/assets/calendario/SalvarLembrete.jpg" alt="Imagens" class="menu-image"> -->
+  </div>
+
+  <div class="menu-section">
+    <h2 class="menu-title">2 - Adicionando um Relógio</h2>
+    <p class="menu-description">
+      Para adicionar o horário de um relógio mundial, primeiro pressione o botão "Mais" no canto direito da tela.
+    </p>
+    <!-- <img src="/assets/calendario/AbaLembretes.jpg" alt="Imagens" class="menu-image"> -->
+    <p class="menu-description">
+      Acessando o menu, você poderá pesquisar o nome da cidade atraves da "Lupa"(1).
+    </p>
+    <!-- <img src="/assets/calendario/ExcluirLembrete.jpg" alt="Imagens" class="menu-image"> -->
+    <p class="menu-description">
+      Após escolher a cidade desejada, basta clicar em seu nome e o mapa mundi ira apontar a cidade desejada. Basta clicar em adicionar e pronto, seu relógio mundial será adicionado. Exemplo da cidade de París:
+    </p>
+    <!-- <img src="/assets/calendario/ExcluirLembrete.jpg" alt="Imagens" class="menu-image"> -->
+  </div>
+
+  <div class="menu-section">
+    <h2 class="menu-title">3 - Excluindo um Relógio</h2>
+    <p class="menu-description">
+      Para excluir um relógio, basta manter o dedo pressionado no relógio que deseja excluir e clicar na opção "Excluir", assim como a imagem abaixo:
+    </p>
+    <!-- <img src="/assets/calendario/AbaLembretes.jpg" alt="Imagens" class="menu-image"> -->
+  </div>
+
+  <div class="bottom-button">
+    <ion-button class="next-button" (click)="accessAlarme()">Página Anterior
+      <ion-icon slot="start" name="arrow-back-outline"></ion-icon>
+    </ion-button>
+    <ion-button class="next-button" (click)="accessCronometro()">Próxima Página
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+</ion-content>

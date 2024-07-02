@@ -30,15 +30,29 @@ const routes: Routes = [
   },
   {
     path: 'relogio',
-    loadChildren: () => import('./relogio/relogio.module').then( m => m.RelogioPageModule)
+    loadChildren: () => import('./RMenu/relogio/relogio.module').then( m => m.RelogioPageModule)
   },
   {
     path: 'gpage2',
     loadChildren: () => import('./GMenu/gpage2/gpage2.module').then( m => m.Gpage2PageModule)
-  },  {
+  },
+  {
     path: 'cpage2',
     loadChildren: () => import('./CMenu/cpage2/cpage2.module').then( m => m.Cpage2PageModule)
   },
+  {
+    path: 'rmundi',
+    loadChildren: () => import('./RMenu/rmundi/rmundi.module').then( m => m.RMundiPageModule)
+  },
+  {
+    path: 'cronometro',
+    loadChildren: () => import('./RMenu/cronometro/cronometro.module').then( m => m.CronometroPageModule)
+  },
+  {
+    path: 'temporizador',
+    loadChildren: () => import('./RMenu/temporizador/temporizador.module').then( m => m.TemporizadorPageModule)
+  },
+
 
 
   

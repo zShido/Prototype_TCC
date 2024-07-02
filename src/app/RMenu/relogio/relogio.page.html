@@ -1,0 +1,109 @@
+<ion-content class="backgroundC">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button class="button" (click)="accessMenu()">
+          <ion-icon name="arrow-undo-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>Calendário</ion-title>
+      <ion-buttons slot="end">
+        <ion-button class="button">
+          <ion-icon name="menu"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <h1 class="centered-text">O que podemos fazer aqui?</h1>
+
+  <div class="button-group">
+    <ion-button class="menu-button white-button" id="present-alert">Alarmes</ion-button>
+    <ion-button class="menu-button white-button" (click)="accessMundi()">Relógio Mundial</ion-button>
+    <ion-button class="menu-button white-button" (click)="accessCronometro()">Cronômetro</ion-button>
+    <ion-button class="menu-button white-button" (click)="accessTemporizador()">Temporizador</ion-button>
+  </div>
+
+  <ion-alert
+    trigger="present-alert"
+    header="Página Atual"
+    message="Você já está nesta página, apenas role para baixo!"
+    [buttons]="alertButtons"
+  ></ion-alert>
+
+  <div class="menu-section">
+    <h2 class="menu-title">Sumário</h2>
+    <p class="menu-description">
+      Nesta página serão abordados os seguintes tópicos:<br>
+    </p>
+    <p class="sumary">
+      1. Alarmes;<br>
+      2. Criando Alarmes;<br>
+      3. Editando Alarmes;<br>
+      4. Desligando Alarmes;<br>
+      5. Excluindo Alarmes;<br>
+    </p>
+  </div>
+
+  <div class="menu-section">
+    <h2 class="menu-title">1 - Alarmes</h2>
+    <p class="menu-description">
+      Ao abrir o menu "Alarme"(1) do relógio, você poderá visualizar a tela inicial dos alarmes, podendo criar, editar e excluir alarmes.
+    </p>
+    <!-- <img src="/assets/calendario/SalvarLembrete.jpg" alt="Imagens" class="menu-image"> -->
+  </div>
+
+  <div class="menu-section">
+    <h2 class="menu-title">2 - Criando Alarmes</h2>
+    <p class="menu-description">
+      Para criar um alarme, basta pressionar o botão "Mais" no canto direito da tela, assim como mosta a imagem a seguir:
+    </p>
+    <!-- <img src="/assets/calendario/AbaLembretes.jpg" alt="Imagens" class="menu-image"> -->
+    <p class="menu-description">
+     Após pressionar o "Mais", você poderá configurar o alarme de acordo com sua preferência, colocando a hora do alarme(1), os dias da semana(2), nome do alarme(3) e toque(4).
+    </p>
+    <!-- <img src="/assets/calendario/ExcluirLembrete.jpg" alt="Imagens" class="menu-image"> -->
+    <p class="menu-description">
+      Depois de configurado, basta clicar no botão "Salvar" e seu alarme estará criado.
+     </p>
+     <!-- <img src="/assets/calendario/ExcluirLembrete.jpg" alt="Imagens" class="menu-image"> -->
+  </div>
+
+  <div class="menu-section">
+    <h2 class="menu-title">3 - Editando Alarmes</h2>
+    <p class="menu-description">
+      Para editar um alarme, pressionar o dedo em cima do Alarme desejado, assim como mostra a imagem a seguir:
+    </p>
+    <!-- <img src="/assets/calendario/AbaLembretes.jpg" alt="Imagens" class="menu-image"> -->
+    <p class="menu-description">
+     Após pressionado, o menu para editar o alarme irá abrir e basta fazer as modificações desejadas
+    </p>
+    <!-- <img src="/assets/calendario/EditarLembrete.jpg" alt="Imagens" class="menu-image"> -->
+  </div>
+
+  <div class="menu-section">
+    <h2 class="menu-title">4 - Desativando Alarmes</h2>
+    <p class="menu-description">
+      Desativar um alarme é muito simples, basta pressionar uma vez o botão de "Desativar", no canto direito do alarme desejado. Na imagem a seguir, o "Alarme 1" é usado como exemplo.
+    </p>
+    <!-- <img src="/assets/calendario/AbaLembretes.jpg" alt="Imagens" class="menu-image"> -->
+    <p class="menu-description">
+      Se deseja reativar o alarme, basta pressionar mais uma vez o mesmo botão e seu alarme irá ativar novamente.
+    </p>
+  </div>
+
+  <div class="menu-section">
+    <h2 class="menu-title">5 - Excluindo Alarmes</h2>
+    <p class="menu-description">
+      Para excluir um alarme, basta selecioná-lo mantendo pressionado o dedo em cima do alarme desejado(1) e em seguida, clicar n botão "Exclui"(2) no canto inferior direito da tela.
+    </p>
+    <!-- <img src="/assets/calendario/AbaLembretes.jpg" alt="Imagens" class="menu-image"> -->
+  </div>
+
+  <div class="bottom-button">
+    <ion-button class="next-button" (click)="accessMundi()">Próxima Página
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+</ion-content>

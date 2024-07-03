@@ -8,10 +8,13 @@
       </ion-buttons>
       <ion-title>Calendário</ion-title>
       <ion-buttons slot="end">
-        <ion-button class="button">
-          <ion-icon name="menu"></ion-icon>
+        <ion-button class="button" id="help-alert">
+          <ion-icon slot="icon-only" name="help-outline"></ion-icon>
         </ion-button>
       </ion-buttons>
+      <ion-alert trigger="help-alert" header="Aviso"
+        message="Nesta página serão mostrados algumas maneiras de realizar algumas funcionalidades, porém existem outras maneiras que nçao são abordadas."
+        [buttons]="helpButtons"></ion-alert>
     </ion-toolbar>
   </ion-header>
 
@@ -24,12 +27,8 @@
     <ion-button class="menu-button white-button" (click)="accessTemporizador()">Temporizador</ion-button>
   </div>
 
-  <ion-alert
-    trigger="present-alert"
-    header="Página Atual"
-    message="Você já está nesta página, apenas role para baixo!"
-    [buttons]="alertButtons"
-  ></ion-alert>
+  <ion-alert trigger="present-alert" header="Página Atual" message="Você já está nesta página, apenas role para baixo!"
+    [buttons]="alertButtons"></ion-alert>
 
   <div class="menu-section">
     <h2 class="menu-title">Sumário Alarmes</h2>
@@ -48,7 +47,8 @@
   <div class="menu-section">
     <h2 class="menu-title">1 - Alarmes</h2>
     <p class="menu-description">
-      Ao abrir o menu Alarme do relógio, você poderá visualizar a tela inicial dos alarmes, podendo criar, editar e excluir alarmes.
+      Ao abrir o menu Alarme do relógio, você poderá visualizar a tela inicial dos alarmes, podendo criar, editar e
+      excluir alarmes.
     </p>
     <img src="/assets/relogio/Menu_Alarme.jpeg" alt="Imagens" class="menu-image">
   </div>
@@ -56,17 +56,19 @@
   <div class="menu-section">
     <h2 class="menu-title">2 - Criando Alarmes</h2>
     <p class="menu-description">
-      Para criar um alarme, basta pressionar o botão "Mais" no canto direito da tela, assim como mosta a imagem a seguir:
+      Para criar um alarme, basta pressionar o botão "Mais" no canto direito da tela, assim como mosta a imagem a
+      seguir:
     </p>
     <img src="/assets/relogio/Mais_Alarme.jpg" alt="Imagens" class="menu-image">
     <p class="menu-description">
-     Após pressionar o "Mais", você poderá configurar o alarme de acordo com sua preferência, colocando a hora do alarme (A), os dias da semana (B), nome do alarme (C) e toque(D).
+      Após pressionar o "Mais", você poderá configurar o alarme de acordo com sua preferência, colocando a hora do
+      alarme (A), os dias da semana (B), nome do alarme (C) e toque(D).
     </p>
     <img src="/assets/relogio/Opcoes_Alarme.jpg" alt="Imagens" class="menu-image">
     <p class="menu-description">
       Depois de configurado, basta clicar no botão "Salvar" e seu alarme estará criado.
-     </p>
-     <img src="/assets/relogio/Salvar_Alarme.jpg" alt="Imagens" class="menu-image">
+    </p>
+    <img src="/assets/relogio/Salvar_Alarme.jpg" alt="Imagens" class="menu-image">
   </div>
 
   <div class="menu-section">
@@ -76,7 +78,7 @@
     </p>
     <img src="/assets/relogio/Editando_Alarme.jpg" alt="Imagens" class="menu-image">
     <p class="menu-description">
-     Após pressionado, o menu para editar o alarme irá abrir e basta fazer as modificações desejadas
+      Após pressionado, o menu para editar o alarme irá abrir e basta fazer as modificações desejadas
     </p>
     <img src="/assets/relogio/Alarme.jpeg" alt="Imagens" class="menu-image">
   </div>
@@ -84,7 +86,8 @@
   <div class="menu-section">
     <h2 class="menu-title">4 - Desativando Alarmes</h2>
     <p class="menu-description">
-      Desativar um alarme é muito simples, basta pressionar uma vez o botão de "Desativar", no canto direito do alarme desejado. Na imagem a seguir, o "Alarme 1" é usado como exemplo.
+      Desativar um alarme é muito simples, basta pressionar uma vez o botão de "Desativar", no canto direito do alarme
+      desejado. Na imagem a seguir, o "Alarme 1" é usado como exemplo.
     </p>
     <img src="/assets/relogio/Desativando_Alarme.jpg" alt="Imagens" class="menu-image">
     <p class="menu-description">
@@ -95,7 +98,8 @@
   <div class="menu-section">
     <h2 class="menu-title">5 - Excluindo Alarmes</h2>
     <p class="menu-description">
-      Para excluir um alarme, basta selecioná-lo mantendo pressionado o dedo em cima do alarme desejado(a) e em seguida, clicar no botão "Excluir" no canto inferior direito da tela.
+      Para excluir um alarme, basta selecioná-lo mantendo pressionado o dedo em cima do alarme desejado(a) e em seguida,
+      clicar no botão "Excluir" no canto inferior direito da tela.
     </p>
     <img src="/assets/relogio/Excluir_Alarme.jpg" alt="Imagens" class="menu-image">
   </div>

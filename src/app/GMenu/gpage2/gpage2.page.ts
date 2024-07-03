@@ -10,6 +10,7 @@ import { NavController } from '@ionic/angular';
 export class Gpage2Page implements OnInit {
 
   alertButtons = ['Entendi']
+  helpButtons = ['Entendido']
 
   constructor(private navCtrl : NavController) { }
 

@@ -8,10 +8,13 @@
       </ion-buttons>
       <ion-title>Calendário</ion-title>
       <ion-buttons slot="end">
-        <ion-button class="button">
-          <ion-icon name="menu"></ion-icon>
+        <ion-button class="button" id="help-alert">
+          <ion-icon slot="icon-only" name="help-outline"></ion-icon>
         </ion-button>
       </ion-buttons>
+      <ion-alert trigger="help-alert" header="Aviso"
+        message="Nesta página serão mostrados algumas maneiras de realizar algumas funcionalidades, porém existem outras maneiras que nçao são abordadas."
+        [buttons]="helpButtons"></ion-alert>
     </ion-toolbar>
   </ion-header>
 
@@ -22,51 +25,52 @@
     <ion-button class="menu-button white-button" (click)="accessPage2()">Lembretes</ion-button>
   </div>
 
-  <ion-alert
-  trigger="present-alert"
-  header="Página Atual"
-  message="Você já está nesta página, apenas role para baixo!"
-  [buttons]="alertButtons"
-></ion-alert>
+  <ion-alert trigger="present-alert" header="Página Atual" message="Você já está nesta página, apenas role para baixo!"
+    [buttons]="alertButtons"></ion-alert>
 
 
   <div class="menu-section">
     <h2 class="menu-title">Sumário Calendário</h2>
     <p class="menu-description">
-     Nesta página serão abordados os seguintes tópicos: <br></p>
-     <p class="sumary" >
-     1. Configurações<br>
-     2. Modelos de Calendários<br>
-     3. Agenda<br>
-     4. Barra de Pesquisa<br>
+      Nesta página serão abordados os seguintes tópicos: <br></p>
+    <p class="sumary">
+      1. Configurações<br>
+      2. Modelos de Calendários<br>
+      3. Agenda<br>
+      4. Barra de Pesquisa<br>
     </p>
-    </div>
+  </div>
 
-    <div class="menu-section">
-      <h2 class="menu-title">1 - Configurações</h2>
-      <p class="menu-description">
-        Primeiramente, para acessar a aba de configurações, clique no menu lateral do calendário no canto superior esquerdo de sua tela (A).
-      </p>
-      <img src="/assets/calendario/1_MenuCalendario.jpg" alt="Imagens" class="menu-image">
-      <p class="menu-description">Após acessar o menu, clique no símbolo de uma "Engrenagem" (B), assim como a figura abaixo:</p>
-      <img src="/assets/calendario/Engrenagem_Calendario.jpg" alt="Imagens" class="menu-image">
-      <p class="menu-description">No menu de configurações você podera editar o formato do seu calendário de acordo com o seu gosto, como mostra a figura a seguir:</p>
-      <img src="/assets/calendario/ConfigCalendario.jpeg" alt="Imagens" class="menu-image">
-      <p class="menu-subtitle">Alterar Estilo do Calendário</p>
-      <p class="menu-description">
-        Neste subtópico será explicado através de imagens possíveis alterações nas configurações do calendário, como por exemplo o tamanho da fonte do título dos eventos e a estilização de suas respectivas cores.
-      </p>
-      <img src="/assets/calendario/AlterarEstiloCalendario.jpg" alt="Imagens" class="menu-image">
-      <img src="/assets/calendario/EstiloCalendario.jpg" alt="Imagens" class="menu-image">
+  <div class="menu-section">
+    <h2 class="menu-title">1 - Configurações</h2>
+    <p class="menu-description">
+      Primeiramente, para acessar a aba de configurações, clique no menu lateral do calendário no canto superior
+      esquerdo de sua tela (A).
+    </p>
+    <img src="/assets/calendario/1_MenuCalendario.jpg" alt="Imagens" class="menu-image">
+    <p class="menu-description">Após acessar o menu, clique no símbolo de uma "Engrenagem" (B), assim como a figura
+      abaixo:</p>
+    <img src="/assets/calendario/Engrenagem_Calendario.jpg" alt="Imagens" class="menu-image">
+    <p class="menu-description">No menu de configurações você podera editar o formato do seu calendário de acordo com o
+      seu gosto, como mostra a figura a seguir:</p>
+    <img src="/assets/calendario/ConfigCalendario.jpeg" alt="Imagens" class="menu-image">
+    <p class="menu-subtitle">Alterar Estilo do Calendário</p>
+    <p class="menu-description">
+      Neste subtópico será explicado através de imagens possíveis alterações nas configurações do calendário, como por
+      exemplo o tamanho da fonte do título dos eventos e a estilização de suas respectivas cores.
+    </p>
+    <img src="/assets/calendario/AlterarEstiloCalendario.jpg" alt="Imagens" class="menu-image">
+    <img src="/assets/calendario/EstiloCalendario.jpg" alt="Imagens" class="menu-image">
 
-    </div>
+  </div>
 
   <div class="menu-section">
     <h2 class="menu-title">2 - Modelos de Calendários</h2>
-    
+
 
     <p class="menu-description">
-      Ao acessar o menu lateral no canto superior esquerdo da tela, você poderá selecionar o formato de visualização do calendário que desejar, assim como as imagens abaixo.
+      Ao acessar o menu lateral no canto superior esquerdo da tela, você poderá selecionar o formato de visualização do
+      calendário que desejar, assim como as imagens abaixo.
     </p>
     <img src="/assets/calendario/1_1Datas.jpg" alt="Imagens" class="menu-image">
     <p class="menu-subtitle">
@@ -90,7 +94,8 @@
   <div class="menu-section">
     <h2 class="menu-title">3 - Agenda</h2>
     <p class="menu-description">
-      Ao abrir o menu lateral e selecionar o menu "Agenda", você poderá visualizar os eventos que estão por vir e que já foram, além dos lembretes criados
+      Ao abrir o menu lateral e selecionar o menu "Agenda", você poderá visualizar os eventos que estão por vir e que já
+      foram, além dos lembretes criados
     </p>
     <img src="/assets/calendario/2_Agenda.jpg" alt="Imagens" class="menu-image">
     <img src="/assets/calendario/2_1AgendaAberta.jpeg" alt="Imagens" class="menu-image">
@@ -99,10 +104,12 @@
   <div class="menu-section">
     <h2 class="menu-title">4 - Barra de Pesquisa</h2>
     <p class="menu-description">
-      Para abrir a barra de pesquisa, procure no canto superior direito da tela o ícone de uma "Lupa", assim como o da figura a seguir.
+      Para abrir a barra de pesquisa, procure no canto superior direito da tela o ícone de uma "Lupa", assim como o da
+      figura a seguir.
     </p>
     <img src="/assets/calendario/3_Lupajpg.jpg" alt="Imagens" class="menu-image">
-    <p class="menu-description">Após clicar na "Lupa", você poderá pesquisar várias coisas, como feriados, datas comemorativas e lembretes criados. Aqui está uma imagem usando o Dia das Mães como exemplo:</p>
+    <p class="menu-description">Após clicar na "Lupa", você poderá pesquisar várias coisas, como feriados, datas
+      comemorativas e lembretes criados. Aqui está uma imagem usando o Dia das Mães como exemplo:</p>
     <img src="/assets/calendario/3_BarraPesquisa.jpg" alt="Imagens" class="menu-image">
   </div>
 

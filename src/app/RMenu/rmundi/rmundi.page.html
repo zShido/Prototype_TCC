@@ -8,45 +8,45 @@
       </ion-buttons>
       <ion-title>Calendário</ion-title>
       <ion-buttons slot="end">
-        <ion-button class="button">
-          <ion-icon name="menu"></ion-icon>
+        <ion-button class="button" id="help-alert">
+          <ion-icon slot="icon-only" name="help-outline"></ion-icon>
         </ion-button>
       </ion-buttons>
+      <ion-alert trigger="help-alert" header="Aviso"
+        message="Nesta página serão mostrados algumas maneiras de realizar algumas funcionalidades, porém existem outras maneiras que nçao são abordadas."
+        [buttons]="helpButtons"></ion-alert>
     </ion-toolbar>
   </ion-header>
 
   <h1 class="centered-text">O que podemos fazer aqui?</h1>
 
   <div class="button-group">
-  <ion-button class="menu-button white-button" (click)="accessAlarme()">Alarmes</ion-button>
-  <ion-button class="menu-button white-button"  id="present-alert">Relógio Mundial</ion-button>
-  <ion-button class="menu-button white-button" (click)="accessCronometro()">Crônometro</ion-button>
-  <ion-button class="menu-button white-button" (click)="accessTemporizador()">Temporizador</ion-button>
-</div>
+    <ion-button class="menu-button white-button" (click)="accessAlarme()">Alarmes</ion-button>
+    <ion-button class="menu-button white-button" id="present-alert">Relógio Mundial</ion-button>
+    <ion-button class="menu-button white-button" (click)="accessCronometro()">Crônometro</ion-button>
+    <ion-button class="menu-button white-button" (click)="accessTemporizador()">Temporizador</ion-button>
+  </div>
 
-  <ion-alert
-  trigger="present-alert"
-  header="Página Atual"
-  message="Você já está nesta página, apenas role para baixo!"
-  [buttons]="alertButtons"
-></ion-alert>
+  <ion-alert trigger="present-alert" header="Página Atual" message="Você já está nesta página, apenas role para baixo!"
+    [buttons]="alertButtons"></ion-alert>
 
 
   <div class="menu-section">
     <h2 class="menu-title">Sumário Relógio Mundial</h2>
     <p class="menu-description">
-     Nesta página serão abordados os seguintes tópicos: <br></p>
-     <p class="sumary" >
-     1. Relógios Mundiais<br>
-     2. Adicionando um Relógio<br>
-     3. Excluindo um Relógio<br>
+      Nesta página serão abordados os seguintes tópicos: <br></p>
+    <p class="sumary">
+      1. Relógios Mundiais<br>
+      2. Adicionando um Relógio<br>
+      3. Excluindo um Relógio<br>
     </p>
-    </div>
+  </div>
 
   <div class="menu-section">
     <h2 class="menu-title">1 - Relógios Mundiais;</h2>
     <p class="menu-description">
-      Ao abrir o menu "Relógio Mundial" do relógio, você poderá visualizar a tela inicial, podendo adicionar ou excluir hórarios de relógios mundiais.
+      Ao abrir o menu "Relógio Mundial" do relógio, você poderá visualizar a tela inicial, podendo adicionar ou excluir
+      hórarios de relógios mundiais.
     </p>
     <img src="/assets/relogio/RelogioMundi.jpeg" alt="Imagens" class="menu-image">
   </div>
@@ -60,9 +60,10 @@
     <p class="menu-description">
       Acessando o menu, você poderá pesquisar o nome da cidade atraves da "Lupa".
     </p>
-    <img src="/assets/relogio/Lupa_Mundo.jpeg" alt="Imagens" class="menu-image">
+    <img src="/assets/relogio/Lupa_Relogio.jpg" alt="Imagens" class="menu-image">
     <p class="menu-description">
-      Após escolher a cidade desejada, basta clicar em seu nome e o mapa mundi ira apontar a cidade desejada. Basta clicar em "Adicionar" e pronto, seu relógio mundial será adicionado. Exemplo da cidade de París:
+      Após escolher a cidade desejada, basta clicar em seu nome e o mapa mundi ira apontar a cidade desejada. Basta
+      clicar em "Adicionar" e pronto, seu relógio mundial será adicionado. Exemplo da cidade de París:
     </p>
     <img src="/assets/relogio/Adicionar_Horario.jpg" alt="Imagens" class="menu-image">
   </div>
@@ -70,9 +71,10 @@
   <div class="menu-section">
     <h2 class="menu-title">3 - Excluindo um Relógio</h2>
     <p class="menu-description">
-      Para excluir um relógio, basta manter o dedo pressionado no relógio que deseja excluir e clicar na opção "Excluir", assim como a imagem abaixo:
+      Para excluir um relógio, basta manter o dedo pressionado no relógio que deseja excluir e clicar na opção
+      "Excluir", assim como a imagem abaixo:
     </p>
-    <!-- <img src="/assets/calendario/AbaLembretes.jpg" alt="Imagens" class="menu-image"> -->
+    <img src="/assets/relogio/ExcluirMundi.jpg" alt="Imagens" class="menu-image">
   </div>
 
   <div class="bottom-button">

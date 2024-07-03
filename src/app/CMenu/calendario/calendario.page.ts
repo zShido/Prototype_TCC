@@ -12,6 +12,8 @@ export class CalendarioPage implements OnInit {
 
   alertButtons = ['Entendido']
 
+  helpButtons = ['Entendido']
+
   ngOnInit() {
   }
 

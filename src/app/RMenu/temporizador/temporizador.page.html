@@ -8,36 +8,27 @@
       </ion-buttons>
       <ion-title>Calendário</ion-title>
       <ion-buttons slot="end">
-        <ion-button class="button">
-          <ion-icon name="menu"></ion-icon>
+        <ion-button class="button" id="help-alert">
+          <ion-icon slot="icon-only" name="help-outline"></ion-icon>
         </ion-button>
       </ion-buttons>
+      <ion-alert trigger="help-alert" header="Aviso"
+        message="Nesta página serão mostrados algumas maneiras de realizar algumas funcionalidades, porém existem outras maneiras que nçao são abordadas."
+        [buttons]="helpButtons"></ion-alert>
     </ion-toolbar>
   </ion-header>
 
   <h1 class="centered-text">O que podemos fazer aqui?</h1>
 
   <div class="button-group">
-    <ion-button class="menu-button white-button" (click)="accessAlarme()"
-      >Alarmes</ion-button
-    >
-    <ion-button class="menu-button white-button" (click)="accessMundi()"
-      >Relógio Mundial</ion-button
-    >
-    <ion-button class="menu-button white-button" (click)="accessCronometro()"
-      >Crônometro</ion-button
-    >
-    <ion-button class="menu-button white-button" id="present-alert"
-      >Temporizador</ion-button
-    >
+    <ion-button class="menu-button white-button" (click)="accessAlarme()">Alarmes</ion-button>
+    <ion-button class="menu-button white-button" (click)="accessMundi()">Relógio Mundial</ion-button>
+    <ion-button class="menu-button white-button" (click)="accessCronometro()">Crônometro</ion-button>
+    <ion-button class="menu-button white-button" id="present-alert">Temporizador</ion-button>
   </div>
 
-  <ion-alert
-    trigger="present-alert"
-    header="Página Atual"
-    message="Você já está nesta página, apenas role para baixo!"
-    [buttons]="alertButtons"
-  ></ion-alert>
+  <ion-alert trigger="present-alert" header="Página Atual" message="Você já está nesta página, apenas role para baixo!"
+    [buttons]="alertButtons"></ion-alert>
 
   <div class="menu-section">
     <h2 class="menu-title">Sumário Temporizador</h2>
@@ -58,47 +49,48 @@
     <h2 class="menu-title">1 - Temporizador</h2>
     <p class="menu-description">
       Entrando no menu do temporizador, você visualizará um contador no centro de
-      sua tela(a), onde você pode configurar o tempo desejado do temporizador, e um botão "Iniciar"(b).
+      sua tela (A), onde você pode configurar o tempo desejado do temporizador, e um botão "Iniciar"(B).
     </p>
-    <!-- <img src="/assets/calendario/MaisCalendario.jpg" alt="Imagens" class="menu-image"> -->
+    <img src="/assets/relogio/Temporizador_Menu.jpg" alt="Imagens" class="menu-image">
 
     <p class="menu-subtitle">2. Iniciar</p>
     <p class="menu-description">
       Após pressionar o botão "Iniciar" o contador do centro da tela irá iniciar
       e começar a contar o tempo.
     </p>
-     <!-- <img src="/assets/calendario/MaisCalendario.jpg" alt="Imagens" class="menu-image"> -->
+    <img src="/assets/relogio/Temporizador_Iniciado.jpeg" alt="Imagens" class="menu-image">
 
     <p class="menu-subtitle">3. Pausar</p>
     <p class="menu-description">
       Pressionando o botão "Pausar" após o contador ser iniciado, ele pausará o
-     contador no tempo desejado.
+      contador no tempo desejado.
     </p>
-    <!-- <img src="/assets/calendario/MaisCalendario.jpg" alt="Imagens" class="menu-image"> -->
+    <img src="/assets/relogio/Pausar_Temporizador.jpg" alt="Imagens" class="menu-image">
 
     <p class="menu-subtitle">4. Retomar</p>
     <p class="menu-description">
       Pressionando o botão "Retomar" após o contador ser pausado, ele continuará o
-     contador a partir do tempo que foi feita a pausa.
+      contador a partir do tempo que foi feita a pausa.
     </p>
-    <!-- <img src="/assets/calendario/ToqueDuplo.jpg" alt="Imagens" class="menu-image"> -->
+    <img src="/assets/relogio/Retomar_Temporizador.jpg" alt="Imagens" class="menu-image">
 
     <p class="menu-subtitle">5. Excluir</p>
     <p class="menu-description">
       Após parar o cronômetro, se desejar excluir o contador, basta clicar no botão "Excluir" na sua tela.
     </p>
-    <!-- <img src="/assets/calendario/TelaLembrete.jpg" alt="Imagens" class="menu-image"> -->
+    <img src="/assets/relogio/Excluir_Temporizador.jpg" alt="Imagens" class="menu-image">
 
     <p class="menu-subtitle">6. Finalizar</p>
     <p class="menu-description">
-      Assim que o tempo do contador se esgotar, seu celular irá emitir um toque, sinalizando que o temporizador acabou, possibilitando você "Desligar"(a) ou "Reiniciar"(b) o temporizador.
+      Assim que o tempo do contador se esgotar, seu celular irá emitir um toque, sinalizando que o temporizador acabou,
+      possibilitando você "Desligar" (A) ou "Reiniciar"(B) o temporizador.
     </p>
-    <!-- <img src="/assets/calendario/TelaLembrete.jpg" alt="Imagens" class="menu-image"> -->
+    <img src="/assets/relogio/Finalizar_Temporizador.jpg" alt="Imagens" class="menu-image">
   </div>
 
   <div class="bottom-button">
     <ion-button class="next-button" (click)="accessCronometro()">
-    Cronômetro
+      Cronômetro
       <ion-icon slot="start" name="arrow-back-outline"></ion-icon>
     </ion-button>
   </div>

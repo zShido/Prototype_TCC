@@ -11,6 +11,8 @@ export class CronometroPage implements OnInit {
 
   alertButtons = ['Entendido']
 
+  helpButtons = ['Entendido']
+
   constructor(private navCtrl : NavController) { }
 
   ngOnInit() {

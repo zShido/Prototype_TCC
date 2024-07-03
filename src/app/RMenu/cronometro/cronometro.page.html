@@ -8,10 +8,13 @@
       </ion-buttons>
       <ion-title>Calendário</ion-title>
       <ion-buttons slot="end">
-        <ion-button class="button">
-          <ion-icon name="menu"></ion-icon>
+        <ion-button class="button" id="help-alert">
+          <ion-icon slot="icon-only" name="help-outline"></ion-icon>
         </ion-button>
       </ion-buttons>
+      <ion-alert trigger="help-alert" header="Aviso"
+        message="Nesta página serão mostrados algumas maneiras de realizar algumas funcionalidades, porém existem outras maneiras que nçao são abordadas."
+        [buttons]="helpButtons"></ion-alert>
     </ion-toolbar>
   </ion-header>
 
@@ -20,38 +23,35 @@
   <div class="button-group">
     <ion-button class="menu-button white-button" (click)="accessAlarme()">Alarmes</ion-button>
     <ion-button class="menu-button white-button" (click)="accessMundi()">Relógio Mundial</ion-button>
-  <ion-button class="menu-button white-button" id="present-alert">Crônometro</ion-button>
-  <ion-button class="menu-button white-button" (click)="accessTemporizador()">Temporizador</ion-button>
-</div>
+    <ion-button class="menu-button white-button" id="present-alert">Crônometro</ion-button>
+    <ion-button class="menu-button white-button" (click)="accessTemporizador()">Temporizador</ion-button>
+  </div>
 
-  <ion-alert
-  trigger="present-alert"
-  header="Página Atual"
-  message="Você já está nesta página, apenas role para baixo!"
-  [buttons]="alertButtons"
-></ion-alert>
+  <ion-alert trigger="present-alert" header="Página Atual" message="Você já está nesta página, apenas role para baixo!"
+    [buttons]="alertButtons"></ion-alert>
 
 
   <div class="menu-section">
     <h2 class="menu-title">Sumário Cronômetro</h2>
     <p class="menu-description">
-     Nesta página serão abordados os seguintes tópicos: <br></p>
-     <p class="sumary" >
-     1. Cronômetro<br>
-     2 Iniciar<br>
-     3 Volta<br>
-     4 Parar<br>
-     5 Retomar<br>
-     6 Restaurar<br>
+      Nesta página serão abordados os seguintes tópicos: <br></p>
+    <p class="sumary">
+      1. Cronômetro<br>
+      2 Iniciar<br>
+      3 Volta<br>
+      4 Parar<br>
+      5 Retomar<br>
+      6 Restaurar<br>
     </p>
-    </div>
+  </div>
 
   <div class="menu-section">
     <h2 class="menu-title">1 - Cronômetro</h2>
     <p class="menu-description">
-      Entrando no menu do cronômetro, você visualizara um contador no centro de sua tela(a) e dois botões principais, "Iniciar"(b) e "Volta"(c).
+      Entrando no menu do cronômetro, você visualizara um contador no centro de sua tela (A) e dois botões principais,
+      "Iniciar"(B) e "Volta"(C).
     </p>
-    <!-- <img src="/assets/calendario/MaisCalendario.jpg" alt="Imagens" class="menu-image"> -->
+    <img src="/assets/relogio/Cronometro_Menu.jpg" alt="Imagens" class="menu-image">
 
     <p class="menu-subtitle">
       2. Iniciar
@@ -59,14 +59,16 @@
     <p class="menu-description">
       Após pressionar o botão "Iniciar" o contador do centro da tela irá iniciar e começar a contar o tempo.
     </p>
+    <img src="/assets/relogio/Cronometro_Iniciado.jpg" alt="Imagens" class="menu-image">
 
     <p class="menu-subtitle">
       3. Volta
     </p>
     <p class="menu-description">
-      Pressionando o botão "Volta" após o contador ser iniciado, ele marcará o momento que você cliclou no botão e o número da volta, assim como mostra a imagem a seguir:
+      Pressionando o botão "Volta" após o contador ser iniciado, ele marcará o momento em que você cliclou no botão e o
+      número da volta, assim como mostra a imagem a seguir:
     </p>
-    <!-- <img src="/assets/calendario/MaisCalendario.jpg" alt="Imagens" class="menu-image"> -->
+    <img src="/assets/relogio/Volta_Cronometro.jpg" alt="Imagens" class="menu-image">
 
     <p class="menu-subtitle">
       4. Parar
@@ -74,15 +76,15 @@
     <p class="menu-description">
       Clicando no botão "Parar", você interrompe o contador, parando no momento em que o botão foi pressionado.<br>
     </p>
-    <!-- <img src="/assets/calendario/ToqueDuplo.jpg" alt="Imagens" class="menu-image"> -->
-    
+    <img src="/assets/relogio/Parar_Cronometro.jpg" alt="Imagens" class="menu-image">
+
     <p class="menu-subtitle">
       5. Retomar
     </p>
     <p class="menu-description">
       Após parar o cronômetro, se desejar continuar o contador a partir da pausa, basta clicar no botão "Retomar".
     </p>
-    <!-- <img src="/assets/calendario/TelaLembrete.jpg" alt="Imagens" class="menu-image"> -->
+    <img src="/assets/relogio/Retomar_Cronometro.jpg" alt="Imagens" class="menu-image">
 
     <p class="menu-subtitle">
       6. Restaurar
@@ -90,8 +92,8 @@
     <p class="menu-description">
       Após parar o cronômetro, se desejar reiniciar o contador, basta clicar no botão "Restaurar".
     </p>
-    <!-- <img src="/assets/calendario/TelaLembrete.jpg" alt="Imagens" class="menu-image"> -->
-    
+    <img src="/assets/relogio/Restaurar_Cronometro.jpg" alt="Imagens" class="menu-image">
+
   </div>
 
   <div class="bottom-button">

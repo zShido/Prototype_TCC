@@ -8,10 +8,13 @@
       </ion-buttons>
       <ion-title>Calendário</ion-title>
       <ion-buttons slot="end">
-        <ion-button class="button">
-          <ion-icon name="menu"></ion-icon>
+        <ion-button class="button" id="help-alert">
+          <ion-icon slot="icon-only" name="help-outline"></ion-icon>
         </ion-button>
       </ion-buttons>
+      <ion-alert trigger="help-alert" header="Aviso"
+        message="Nesta página serão mostrados algumas maneiras de realizar algumas funcionalidades, porém existem outras maneiras que nçao são abordadas."
+        [buttons]="helpButtons"></ion-alert>
     </ion-toolbar>
   </ion-header>
 
@@ -19,27 +22,23 @@
 
   <div class="button-group">
     <ion-button class="menu-button white-button" (click)="accessCalendario()">Calendário</ion-button>
-    <ion-button class="menu-button white-button"  id="present-alert">Lembretes</ion-button>
+    <ion-button class="menu-button white-button" id="present-alert">Lembretes</ion-button>
   </div>
 
-  <ion-alert
-  trigger="present-alert"
-  header="Página Atual"
-  message="Você já está nesta página, apenas role para baixo!"
-  [buttons]="alertButtons"
-></ion-alert>
+  <ion-alert trigger="present-alert" header="Página Atual" message="Você já está nesta página, apenas role para baixo!"
+    [buttons]="alertButtons"></ion-alert>
 
 
   <div class="menu-section">
     <h2 class="menu-title">Sumário Lembretes</h2>
     <p class="menu-description">
-     Nesta página serão abordados os seguintes tópicos: <br></p>
-     <p class="sumary" >
-     1. Criando Lembretes<br>
-     2. Excluindo Lembretes<br>
-     3. Editando Lembretes<br>
+      Nesta página serão abordados os seguintes tópicos: <br></p>
+    <p class="sumary">
+      1. Criando Lembretes<br>
+      2. Excluindo Lembretes<br>
+      3. Editando Lembretes<br>
     </p>
-    </div>
+  </div>
 
   <div class="menu-section">
     <h2 class="menu-title">1 - Criando Lembretes</h2>
@@ -65,21 +64,23 @@
     </p>
     <img src="/assets/calendario/ToqueDuplo.jpg" alt="Imagens" class="menu-image">
     <p class="menu-description">
-      Clicando duas vezes na data desejada para criar o lembrete. Na imagem a seguir, estamos usando o dia 28 de Junho como exemplo.<br>
+      Clicando duas vezes na data desejada para criar o lembrete. Na imagem a seguir, estamos usando o dia 28 de Junho
+      como exemplo.<br>
     </p>
-    
+
     <p class="menu-subtitle">
       Tela de Lembrete
     </p>
     <p class="menu-description">
-      Abrindo a tela de lembretes, você pode configurá-lo da maneira que desejar, adicionando um título (A), escolhendo o período do lembrete (B), local (C) e a hora da notificação do evento (D).<br>
+      Abrindo a tela de lembretes, você pode configurá-lo da maneira que desejar, adicionando um título (A), escolhendo
+      o período do lembrete (B), local (C) e a hora da notificação do evento (D).<br>
     </p>
     <img src="/assets/calendario/Tela_Lembrete.jpg" alt="Imagens" class="menu-image">
     <img src="/assets/calendario/SalvarLembrete.jpg" alt="Imagens" class="menu-image">
     <p class="menu-description">
       Após editar o lembrete como desejar, basta clicar em "Salvar" e seu lembrete estará pronto.
     </p>
-    
+
   </div>
 
   <div class="menu-section">
@@ -89,7 +90,8 @@
     </p>
     <img src="/assets/calendario/AbaLembretes.jpg" alt="Imagens" class="menu-image">
     <p class="menu-description">
-      Após acessar o menu, procure o lembrete na sua respectiva data e mantenha o dedo pressionado nele. Em seguida, abrirá um menu lateral, onde basta selecionar a opção "Excluir".
+      Após acessar o menu, procure o lembrete na sua respectiva data e mantenha o dedo pressionado nele. Em seguida,
+      abrirá um menu lateral, onde basta selecionar a opção "Excluir".
     </p>
     <img src="/assets/calendario/ExcluirLembrete.jpg" alt="Imagens" class="menu-image">
     <img src="/assets/calendario/LixeiraLembrete.jpg" alt="Imagens" class="menu-image">
@@ -105,7 +107,8 @@
     </p>
     <img src="/assets/calendario/AbaLembretes.jpg" alt="Imagens" class="menu-image">
     <p class="menu-description">
-      Após acessar o menu, procure o lembrete na sua respectiva data e mantenha o dedo pressionado nele. Em seguida, abrirá um menu lateral, onde basta selecionar a opção "Editar".
+      Após acessar o menu, procure o lembrete na sua respectiva data e mantenha o dedo pressionado nele. Em seguida,
+      abrirá um menu lateral, onde basta selecionar a opção "Editar".
     </p>
     <img src="/assets/calendario/EditarLembrete.jpg" alt="Imagens" class="menu-image">
   </div>

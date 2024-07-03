@@ -8,10 +8,13 @@
       </ion-buttons>
       <ion-title>Galeria</ion-title>
       <ion-buttons slot="end">
-        <ion-button class="button">
-          <ion-icon name="menu"></ion-icon>
+        <ion-button class="button" id="help-alert">
+          <ion-icon slot="icon-only" name="help-outline"></ion-icon>
         </ion-button>
       </ion-buttons>
+      <ion-alert trigger="help-alert" header="Aviso"
+        message="Nesta página serão mostrados algumas maneiras de realizar algumas funcionalidades, porém existem outras maneiras que nçao são abordadas."
+        [buttons]="helpButtons"></ion-alert>
     </ion-toolbar>
   </ion-header>
 
@@ -19,34 +22,31 @@
 
   <div class="button-group">
     <ion-button class="menu-button white-button" (click)="accessImagens()">Imagens</ion-button>
-    <ion-button class="menu-button white-button"  id="present-alert" >Álbuns</ion-button>
+    <ion-button class="menu-button white-button" id="present-alert">Álbuns</ion-button>
   </div>
 
-  <ion-alert
-  trigger="present-alert"
-  header="Página Atual"
-  message="Você já está nesta página, apenas role para baixo!"
-  [buttons]="alertButtons"
-></ion-alert>
+  <ion-alert trigger="present-alert" header="Página Atual" message="Você já está nesta página, apenas role para baixo!"
+    [buttons]="alertButtons"></ion-alert>
 
-<div class="menu-section">
-  <h2 class="menu-title">Sumário Álbuns</h2>
-  <p class="menu-description">
-   Nesta página serão abordados os seguintes tópicos: <br></p>
-   <p class="sumary" >
-   1. Álbuns<br>
-   2. Criando Álbuns<br>
-   3. Álbuns Essenciais<br>
-   4. Ver tudo<br>
-   5. Selecionando e Excluindo Álbuns<br>
-  </p>
+  <div class="menu-section">
+    <h2 class="menu-title">Sumário Álbuns</h2>
+    <p class="menu-description">
+      Nesta página serão abordados os seguintes tópicos: <br></p>
+    <p class="sumary">
+      1. Álbuns<br>
+      2. Criando Álbuns<br>
+      3. Álbuns Essenciais<br>
+      4. Ver tudo<br>
+      5. Selecionando e Excluindo Álbuns<br>
+    </p>
   </div>
 
   <div class="menu-section">
     <h2 class="menu-title">1 - Álbuns</h2>
     <img src="/assets/galeria/1_Album.jpg" alt="Imagens" class="menu-image">
     <p class="menu-description">
-      Ao acessar o menu de "Álbuns", no centro da tela você poderá visualizar todos os álbuns criados no seu celular.<br>
+      Ao acessar o menu de "Álbuns", no centro da tela você poderá visualizar todos os álbuns criados no seu
+      celular.<br>
       Álbuns foram criados para facilitar a organização de fotos e vídeos do seu celular.
     </p>
   </div>
@@ -66,7 +66,8 @@
   <div class="menu-section">
     <h2 class="menu-title">3 - Álbuns Essenciais</h2>
     <p class="menu-description">
-      Álbuns Essenciais são álbuns selecionados para serem exibidos no menu inicial de Álbuns. Para definir ou retirar um álbum como Essencial, basta clicar no menu "Três Pontinhos".
+      Álbuns Essenciais são álbuns selecionados para serem exibidos no menu inicial de Álbuns. Para definir ou retirar
+      um álbum como Essencial, basta clicar no menu "Três Pontinhos".
     </p>
     <img src="/assets/galeria/3_2_1AlbunsMenu.jpg" alt="Imagens" class="menu-image">
     <p class="menu-description">
@@ -82,7 +83,8 @@
   <div class="menu-section">
     <h2 class="menu-title">4 - Ver tudo</h2>
     <p class="menu-description">
-      No menu de álbuns, clique no botão "Ver Tudo" para visualizar todos os álbuns do aparelho e suas respectivas fotos.
+      No menu de álbuns, clique no botão "Ver Tudo" para visualizar todos os álbuns do aparelho e suas respectivas
+      fotos.
     </p>
     <img src="/assets/galeria/3_3VerTudo.jpg" alt="Imagens" class="menu-image">
   </div>
@@ -91,7 +93,8 @@
     <h2 class="menu-title">5 - Selecionando e Excluindo Álbuns</h2>
     <img src="/assets/galeria/3_4ExcluiAlbum.jpg" alt="Imagens" class="menu-image">
     <p class="menu-description">
-      Para selecionar um  álbum, basta manter o dedo precionado no álbum de sua escolha. Após ser selecionado, clique na opção "Excluir".<br> 
+      Para selecionar um álbum, basta manter o dedo precionado no álbum de sua escolha. Após ser selecionado, clique na
+      opção "Excluir".<br>
     </p>
 
     <img src="/assets/galeria/3_4_1LixeiraAlbum.jpg" alt="Imagens" class="menu-image">
@@ -105,5 +108,5 @@
       <ion-icon slot="start" name="arrow-back-outline"></ion-icon>
     </ion-button>
   </div>
-  
+
 </ion-content>

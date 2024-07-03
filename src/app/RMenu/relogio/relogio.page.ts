@@ -10,6 +10,8 @@ export class RelogioPage implements OnInit {
 
   alertButtons = ['Entendido']
 
+  helpButtons = ['Entendido']
+
   constructor(private navCtrl : NavController) { }
 
   ngOnInit() {

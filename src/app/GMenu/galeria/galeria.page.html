@@ -8,25 +8,20 @@
       </ion-buttons>
       <ion-title>Galeria</ion-title>
       <ion-buttons slot="end">
-        <ion-button class="button" id="help-alert">
+        <ion-button class="button" (click)="alertaInfo()">
           <ion-icon slot="icon-only" name="help-outline"></ion-icon>
         </ion-button>
       </ion-buttons>
-      <ion-alert trigger="help-alert" header="Aviso"
-        message="Nesta página serão mostrados algumas maneiras de realizar algumas funcionalidades, porém existem outras maneiras que nçao são abordadas."
-        [buttons]="helpButtons"></ion-alert>
     </ion-toolbar>
   </ion-header>
 
   <h1 class="centered-text">O que podemos fazer aqui?</h1>
 
   <div class="button-group">
-    <ion-button class="menu-button white-button" id="present-alert">Imagens</ion-button>
+    <ion-button class="menu-button white-button" (click)="alertaPaginaAtual()">Imagens</ion-button>
     <ion-button class="menu-button white-button" (click)="accessAlbuns()">Álbuns</ion-button>
   </div>
 
-  <ion-alert trigger="present-alert" header="Página Atual" message="Você já está nesta página, apenas role para baixo!"
-    [buttons]="pagegalert"></ion-alert>
 
   <div class="menu-section">
     <h2 class="menu-title">Sumário Imagens</h2>

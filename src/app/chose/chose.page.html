@@ -8,15 +8,9 @@
       </ion-buttons>
       <ion-title>Prototype</ion-title>
       <ion-buttons slot="end">
-        <ion-button class="button" id="present-alert">
+        <ion-button class="button" (click)="abrirAlerta()">
           <ion-icon slot="icon-only" name="help-outline"></ion-icon>
         </ion-button>
-        <ion-alert
-          trigger="present-alert"
-          header="Dificuldades?"
-          message="Repare na maçã na parte traseira do seu aparelho!"
-          [buttons]="alertButtons"
-        ></ion-alert>
       </ion-buttons>
     </ion-toolbar>
   </ion-header>

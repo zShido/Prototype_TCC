@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { NavController } from '@ionic/angular';
+import { AlertService } from '../common/alert.service';
 
 @Component({
   selector: 'app-chose',
@@ -11,7 +12,7 @@ export class ChosePage implements OnInit {
 
   alertButtons = ['Ok!']
 
-  constructor(private navCtrl: NavController) { }
+  constructor(private navCtrl: NavController, private alertService: AlertService) { }
 
   ngOnInit() {
   }
@@ -22,6 +23,10 @@ export class ChosePage implements OnInit {
 
   accessAndroid(){
     this.navCtrl.navigateForward('/menu-android');
+  }
+
+  abrirAlerta(){
+    this.alertService.presentAlert("Prototype","Dificuldades?","Repare na maçã na parte traseira do seu aparelho!")
   }
 
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
 import { NavController } from '@ionic/angular';
+import { AlertService } from '../common/alert.service';
+import { LoadingController } from '@ionic/angular';
 
 @Component({
   selector: 'app-menu-android',
@@ -9,24 +10,40 @@ import { NavController } from '@ionic/angular';
 })
 export class MenuAndroidPage implements OnInit {
 
-  constructor(private navCtrl : NavController) { }
+  constructor(
+    private navCtrl: NavController,
+    private alertService: AlertService,
+    private loadingController: LoadingController
+  ) { }
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  async showLoaderAndNavigate(navigationFn: () => void) {
+    const loading = await this.loadingController.create({
+      message: 'Aguarde...',
+    });
+    await loading.present();
+
+    navigationFn();
+
+    setTimeout(() => {
+      loading.dismiss();
+    }, 1000); 
   }
 
   accessChose(){
-    this.navCtrl.navigateBack('/chose');
+    this.showLoaderAndNavigate(() => this.navCtrl.navigateBack('/chose'));
   }
 
   accessGaleria(){
-    this.navCtrl.navigateForward('/galeria')
+    this.showLoaderAndNavigate(() => this.navCtrl.navigateForward('/galeria'));
   }
 
   accessCalendario(){
-    this.navCtrl.navigateForward('/calendario')
+    this.showLoaderAndNavigate(() => this.navCtrl.navigateForward('/calendario'));
   }
 
   accessRelogio(){
-    this.navCtrl.navigateForward('/relogio')
+    this.showLoaderAndNavigate(() => this.navCtrl.navigateForward('/relogio'));
   }
 }

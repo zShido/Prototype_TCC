@@ -31,11 +31,11 @@ export class RelogioPage implements OnInit {
   }
 
   alertaInfo(){
-    this.alertService.presentAlert("Prototype","Aviso","Nesta página serão mostrados algumas maneiras de realizar algumas funcionalidades, porém existem outras maneiras que nçao são abordadas.")
+    this.alertService.presentAlert("TechSênior","Aviso","Nesta página serão mostrados algumas maneiras de realizar algumas funcionalidades, porém existem outras maneiras que não são abordadas.")
   }
 
   alertaPaginaAtual(){
-    this.alertService.presentAlert("Prototype","Aviso","Você já está nesta página, apenas role para baixo!")
+    this.alertService.presentAlert("TechSênior","Aviso","Você já está nesta página, apenas role para baixo!")
   }
 
 }

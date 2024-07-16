@@ -1,3 +1,7 @@
+*{
+  font-family: 'Helvetica', sans-serif;
+}
+
 ion-content {
     --background: none; // Remove o fundo padrão do ion-content, se necessário
     position: relative; // Necessário para posicionamento absoluto dos elementos internos
@@ -18,14 +22,14 @@ ion-content {
   }
   
   .centered-text1 {
-    color: #054b41;
+    color: #000000;
     font-size: 2rem;
     text-align: center; // Centraliza o texto horizontalmente
     margin-top: 4vh;
   }
   
   .centered-text2 {
-    color: #054b41;
+    color: #000000;
     font-size: 1.5rem;
     text-align: center; // Centraliza o texto horizontalmente
     margin-top: 3vh;

@@ -1,3 +1,7 @@
+*{
+  font-family: 'Helvetica', sans-serif;
+}
+
 ion-content.backgroundC {
   --background: none;
   display: flex;
@@ -55,8 +59,9 @@ h1.centered-text {
   padding: 0.75rem 1.2rem;
   border: none;
   box-shadow: none;
-  flex: 1 1 40%; /* Ajuste a largura dos botões para caberem na tela */
+  flex: 1 1 45%; /* Ajusta a largura dos botões para caberem lado a lado */
   max-width: 45%; /* Define um tamanho máximo para os botões */
+  min-width: 230px; /* Define um tamanho mínimo para os botões */
 }
 
 .white-button {

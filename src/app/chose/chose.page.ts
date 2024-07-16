@@ -26,7 +26,7 @@ export class ChosePage implements OnInit {
   }
 
   abrirAlerta(){
-    this.alertService.presentAlert("Prototype","Dificuldades?","Repare na maçã na parte traseira do seu aparelho!")
+    this.alertService.presentAlert("TechSênior","Dificuldades?","Repare na maçã na parte traseira do seu aparelho!")
   }
 
 }

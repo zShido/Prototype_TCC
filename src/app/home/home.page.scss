@@ -1,18 +1,20 @@
-*{
+* {
   font-family: 'Helvetica', sans-serif;
 }
+
 .container {
   display: flex;
   flex-direction: column; // Organiza os elementos em uma coluna
   justify-content: center; // Centraliza verticalmente
   align-items: center; // Centraliza horizontalmente
   height: 100%; // Ocupa toda a altura disponível dentro do componente
+  padding-top: 200px; // Espaçamento no topo para garantir que o conteúdo não sobreponha a imagem
 }
 
 .centered-title {
   color: black; // Ajuste a cor do texto se necessário
   font-size: 2.5rem; // Ajuste o tamanho da fonte conforme necessário
-  margin-top: 12.5rem;
+  margin-top: 1rem;
   margin-bottom: 4rem; // Espaçamento abaixo do título
 }
 
@@ -29,11 +31,11 @@
   margin-top: 1.5rem; // Espaçamento acima do botão
 }
 
-.custom-img{
-  position: absolute; // Permite posicionar a imagem independentemente
-  top: 0; // Posiciona a imagem no topo do contêiner
+.custom-img {
+  position: fixed; // Posiciona a imagem de forma fixa na tela
+  top: 10%; // Ajusta a posição vertical da imagem conforme necessário
   width: 210px; // Defina a largura desejada da imagem
   height: auto; // Mantém a proporção original da imagem
-  margin-top: 90px; // Ajusta a posição vertical da imagem conforme necessário
+  left: 50%; // Centraliza horizontalmente
+  transform: translateX(-50%); // Centraliza a imagem
 }
-
